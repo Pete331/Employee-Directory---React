@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
-import ProductTable from "./ProductTable";
-import makeEmployees from "../utils/fakerEmployees";
+import UserTable from "./UserTable";
+import API from "../utils/API";
+import Navbar from './Navbar';
 
-const EMPLOYEES = makeEmployees()
-console.log(EMPLOYEES);
+function Table() {
+  const [data, setData] = useState();
 
-export default function App() {
+  useEffect(() => {
+    API.getUsers().then((results) => {
+      setData(results.data.results);
+    });
+  }, []);
+
+  console.log(data);
+
   return (
-    <div className="App">
-      <ProductTable products={EMPLOYEES} />
+    <div>
+      <Navbar/>
+      {/* put the loading in on the if otherwise usertable renders without the data */}
+      {!data ? "Loading..." : <UserTable employees={data} />}
     </div>
   );
 }
+
+export default Table;
