@@ -1,12 +1,12 @@
 import { useState, useMemo } from "react";
 
-const useSortableData = (items, config = null) => {
+const useSortableData = (employees, config = null) => {
   const [sortConfig, setSortConfig] = useState(config);
 
   const sortedItems = useMemo(() => {
-    let sortableItems = [...items];
+    let sortableEmployees = [...employees];
     if (sortConfig !== null) {
-      sortableItems.sort((a, b) => {
+      sortableEmployees.sort((a, b) => {
         if (a[sortConfig.key] < b[sortConfig.key]) {
           return sortConfig.direction === "ascending" ? -1 : 1;
         }
@@ -16,9 +16,10 @@ const useSortableData = (items, config = null) => {
         return 0;
       });
     }
-    return sortableItems;
-  }, [items, sortConfig]);
+    return sortableEmployees;
+  }, [employees, sortConfig]);
 
+  // key is heading name
   const requestSort = (key) => {
     let direction = "ascending";
     if (

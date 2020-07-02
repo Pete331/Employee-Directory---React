@@ -1,13 +1,13 @@
 import React from "react";
 import useSortableData from "./UseSortableData";
-import moment from "moment";
+import Container from 'react-bootstrap/Container';
 
 const UserTable = (props) => {
   const { employees, requestSort, sortConfig } = useSortableData(
     props.employees
   );
 
-  // class name is changed from ascending to descending vise versa when buttons clicked in heading
+  // class name is changed from ascending to descending vise versa when buttons clicked in heading sortconfig has a key and a direction passed in
   const getClassNamesFor = (name) => {
     if (!sortConfig) {
       return;
@@ -16,16 +16,17 @@ const UserTable = (props) => {
   };
 
   return (
+    <Container >
     <table>
-            {/* headings that are sortable */}
+      {/* headings that are sortable */}
       <thead>
         <tr>
           <th>Profile Pic</th>
           <th>
             <button
               type="button"
-              onClick={() => requestSort("name")}
-              className={getClassNamesFor("name")}
+              onClick={() => requestSort("lastName")}
+              className={getClassNamesFor("lastName")}
             >
               Name
             </button>
@@ -43,8 +44,8 @@ const UserTable = (props) => {
           <th>
             <button
               type="button"
-              onClick={() => requestSort("dob")}
-              className={getClassNamesFor("dob")}
+              onClick={() => requestSort("yearDate")}
+              className={getClassNamesFor("yearDate")}
             >
               DOB
             </button>
@@ -54,26 +55,25 @@ const UserTable = (props) => {
       {/* employees list */}
       <tbody>
         {employees.map((employee) => {
-          // format date
-          let shortDate = moment(employee.dob.date).format("DD/MM/YYYY");
-
           return (
-            <tr key={employee.login.uuid}>
+            <tr key={employee.id}>
               <td>
-                <img
-                  src={employee.picture.medium}
-                  alt={employee.name.first}
-                ></img>
+                <img src={employee.pic} alt={employee.firstName}></img>
               </td>
-              <td>{employee.name.first}</td>
+              <td>
+                {employee.firstName} {employee.lastName}
+              </td>
               <td>{employee.phone}</td>
               <td>{employee.email}</td>
-              <td>{shortDate}</td>
+              <td>
+                {employee.dayMonthDate}/{employee.yearDate}
+              </td>
             </tr>
           );
         })}
       </tbody>
     </table>
+    </Container>
   );
 };
 
