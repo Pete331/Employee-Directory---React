@@ -23,8 +23,12 @@ function Table() {
     console.log(searchKeys);
 
     const filteredList = data.filter((item) => {
-      console.log(item.lastName);
-      let values = item.lastName.toLowerCase();
+      let values =
+        item.firstName.toLowerCase() +
+        " " +
+        item.lastName.toLowerCase() +
+        item.email.toLowerCase() +
+        item.phone.toLowerCase();
       console.log(searchKeys, values);
       if (values.indexOf(searchKeys.toLowerCase()) !== -1) {
         return item;
