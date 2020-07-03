@@ -17,7 +17,7 @@ const UserTable = (props) => {
 
   return (
     <Container >
-    <table>
+    <table className="mt-4">
       {/* headings that are sortable */}
       <thead>
         <tr>

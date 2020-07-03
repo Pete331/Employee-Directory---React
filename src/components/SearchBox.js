@@ -5,15 +5,16 @@ import FormControl from "react-bootstrap/FormControl";
 function SearchBox(props) {
   return (
     <Form inline>
+      <Form.Text className="text-dark">
+        Search by name, email or phone number
+      </Form.Text>
+
       <FormControl
         value={props.search}
         onChange={props.handleInputChange}
-        name="term"
-        list="term"
         type="text"
-        className="form-control"
+        className="m-3 form-control"
         placeholder="Search"
-        // className=" mr-sm-2"
       />
     </Form>
   );

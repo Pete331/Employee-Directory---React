@@ -2,6 +2,6 @@ import axios from "axios";
 
 export default {
   getUsers: function() {
-    return axios.get("https://randomuser.me/api/?results=99&nat=au");
+    return axios.get("https://randomuser.me/api/?results=10&nat=au");
   },
 };
