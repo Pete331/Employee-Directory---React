@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Emloyee Directory
+This application generates 100 employee entries and displays some of their details such as name, email address and phone number. The user can click the various coloumn headings to sort them in ascending or descending order. The user can lso use the search box to filter for an employee by mane, email or phone number.  
 
-## Available Scripts
+![GitHub last commit](https://img.shields.io/github/last-commit/Pete331/Employee-Directory---React)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Pete331/Employee-Directory---React)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pete331/Employee-Directory---React)
+![GitHub top language](https://img.shields.io/github/languages/top/Pete331/Employee-Directory---React)  
+## Table of Contents
+- Installation
+- Usage
+- License
+- Contributing
+- Tests
 
-In the project directory, you can run:
+## Installation
+As there is no back-end to this application there is no requirement for installation locally. The application can be viewed from [here](https://pete331.github.io/Employee-Directory---React/)
+## Usage
+Youcan use this freely to search randomly generated employees. You could link it to other databases easily so that actual people are displayed rather than mocks.
+## License
+MIT License
+## Contributing
+Feel free to submit any pull requests
+## Tests
+There are currently no tests supplied with this repo
+## 
 
-### `npm start`
+### Click on profile picture below to see Pete331's Github profile
+[![Pete331's Profile Picture](https://avatars2.githubusercontent.com/u/53825841?v=4&s=200 "Created by Pete331")](https://github.com/Pete331)  
+![GitHub followers](https://img.shields.io/github/followers/Pete331?style=social)  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
