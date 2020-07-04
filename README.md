@@ -1,5 +1,5 @@
 # Emloyee Directory
-This application generates 100 employee entries and displays some of their details such as name, email address and phone number. The user can click the various coloumn headings to sort them in ascending or descending order. The user can lso use the search box to filter for an employee by mane, email or phone number.  
+This application generates 100 employee entries and displays some of their details such as name, email address and phone number. The user can click the various column headings to sort them in ascending or descending order. The user can also use the search box to filter for an employee by name, email or phone number.  
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Pete331/Employee-Directory---React)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Pete331/Employee-Directory---React)
