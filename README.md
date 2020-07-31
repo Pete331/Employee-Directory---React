@@ -1,5 +1,5 @@
 # Emloyee Directory
-Deployed Application can be viewed [here](https://employee-directory331.herokuapp.com/)  
+**Deployed Application can be viewed [here](https://employee-directory331.herokuapp.com/)**  
 This application generates 100 employee entries and displays some of their details such as name, email address and phone number. The user can click the various column headings to sort them in ascending or descending order. The user can also use the search box to filter for an employee by name, email or phone number.  
 I created this app from the ground up - It was a great learning experience into react and how to use numerous hooks.  
 
